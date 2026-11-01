@@ -36,3 +36,12 @@ Cada item vai ter 300px.
 11- Como flex-shrink : 0 faz com que os itens não encolham, ou seja, eles mantem 400px. O valor dos itens juntos é de 800px, enquanto a faixa tem apenas 600px. Então os itens vão transbordar pois falta 200px.
 
 12- Um exemplo, seria um ícone, quando colocado com flex-shrink : 0, ele fica do mesmo tamanho independente da modificação ou a falta de espaço da página.
+
+13- É o tamanho de um item antes ou depois dele crescer ou encolher. Quando o flex-basis tem um valor diferente de auto, o que prevalece e a base, o próprio flex em vez do width. Dito isso, nesse caso o 10rem vale como valor de partida
+
+14-Isso acontece porque o flex-basis: 0 define o tamanho inicial dos elementos como zero, fazendo com que o navegador desconsidere o tamanho do conteúdo na distribuição do espaço. Assim, o flex-grow distribui todo o espaço disponível no container entre os elementos, de acordo com suas proporções, em vez de distribuir apenas o espaço que sobra após considerar seus tamanhos iniciais
+
+15- flex: initial: equivale a flex-grow: 0, flex-shrink: 1 e flex-basis: auto.
+    flex: 10: equivale a flex-grow: 1, flex-shrink: 1 e flex-basis: 0.
+    flex: auto: equivale a flex-grow: 1, flex-shrink: 1 e flex-basis: auto.
+    flex: none: equivale a flex-grow: 0, flex-shrink: 0 e flex-basis: auto.
